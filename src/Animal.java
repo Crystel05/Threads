@@ -160,7 +160,7 @@ public class Animal implements Runnable{
     }
 
     private void cambiarMeta() throws FileNotFoundException {
-        String path = "src/Imagenes/metaAmbos.png";
+        String path = "src/Vista.Imagenes/metaAmbos.png";
         InputStream stream = new FileInputStream(path);
         Image image = new Image(stream);
         meta.setImage(image);
@@ -169,9 +169,9 @@ public class Animal implements Runnable{
     private void cambiarImagen(boolean dormir) throws FileNotFoundException {
         String path;
         if (dormir) {
-            path = "src/Imagenes/liebreDormida.png";
+            path = "src/Vista.Imagenes/liebreDormida.png";
         }else{
-            path = "src/Imagenes/liebre.png";
+            path = "src/Vista.Imagenes/liebre.png";
         }
         InputStream stream = new FileInputStream(path);
         Image image = new Image(stream);

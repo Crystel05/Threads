@@ -1,3 +1,5 @@
+package Vista;
+
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
