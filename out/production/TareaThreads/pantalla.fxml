@@ -28,7 +28,7 @@
       </ImageView>
       <Text layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Carrera threads" textAlignment="CENTER" wrappingWidth="945.0">
          <font>
-            <Font name="Colonna MT" size="40.0" />
+            <Font name="Consolas Bold" size="31.0" />
          </font>
       </Text>
       <Text layoutX="21.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tortuga">
@@ -43,12 +43,12 @@
       </Text>
       <Slider fx:id="tortugaSlider" blendMode="MULTIPLY" blockIncrement="1.0" layoutX="77.0" layoutY="308.0" showTickLabels="true" showTickMarks="true" />
       <Slider fx:id="liebreSlider" blendMode="MULTIPLY" blockIncrement="1.0" layoutX="77.0" layoutY="345.0" showTickLabels="true" showTickMarks="true" />
-      <Text fx:id="tortugaVelocidad" layoutX="805.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+      <Text fx:id="tortugaVelocidad" layoutX="856.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
          <font>
             <Font name="Candara" size="16.0" />
          </font>
       </Text>
-      <Text fx:id="liebreVelocidad" layoutX="805.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+      <Text fx:id="liebreVelocidad" layoutX="856.0" layoutY="361.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
          <font>
             <Font name="Candara" size="16.0" />
          </font>
@@ -71,27 +71,12 @@
       </ImageView>
       <Line endX="816.0000610351562" layoutX="122.0" layoutY="135.0" startX="-122.00000762939453" stroke="#1c614f" strokeWidth="3.0" />
       <Line endX="816.0000610351562" layoutX="122.0" layoutY="208.0" startX="-122.0" stroke="#1c614f" strokeWidth="3.0" />
-      <Text layoutX="777.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Velocidad">
+      <Text layoutX="828.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Velocidad">
          <font>
             <Font name="Candara Italic" size="16.0" />
          </font>
       </Text>
-      <Text layoutX="865.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tiempo">
-         <font>
-            <Font name="Candara" size="16.0" />
-         </font>
-      </Text>
-      <Text fx:id="tortugaTiempo" layoutX="886.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
-         <font>
-            <Font name="Candara" size="16.0" />
-         </font>
-      </Text>
-      <Text fx:id="liebreTiempo" layoutX="886.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
-         <font>
-            <Font name="Candara" size="16.0" />
-         </font>
-      </Text>
-      <Button blendMode="MULTIPLY" layoutX="380.0" layoutY="279.0" mnemonicParsing="false" onAction="#comenzar" prefHeight="30.0" prefWidth="198.0" text="COMENZAR">
+      <Button blendMode="MULTIPLY" layoutX="422.0" layoutY="276.0" mnemonicParsing="false" onAction="#comenzar" prefHeight="92.0" prefWidth="210.0" text="COMENZAR">
          <font>
             <Font name="Consolas" size="25.0" />
          </font>
@@ -120,12 +105,12 @@
             <Image url="@Vista/Imagenes/meta.png" />
          </image>
       </ImageView>
-      <Text layoutX="709.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tortuga">
+      <Text layoutX="760.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tortuga">
          <font>
             <Font name="Candara" size="16.0" />
          </font>
       </Text>
-      <Text layoutX="709.0" layoutY="358.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liebre">
+      <Text layoutX="760.0" layoutY="359.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liebre">
          <font>
             <Font name="Candara" size="16.0" />
          </font>
@@ -173,24 +158,5 @@
             <Font name="Candara" size="18.0" />
          </font>
       </Text>
-      <Button blendMode="MULTIPLY" layoutX="380.0" layoutY="333.0" mnemonicParsing="false" onAction="#reiniciar" prefHeight="46.0" prefWidth="198.0" text="REINCIAR">
-         <font>
-            <Font name="Consolas" size="25.0" />
-         </font>
-         <effect>
-            <Lighting diffuseConstant="1.04" specularConstant="1.58" surfaceScale="2.51">
-               <bumpInput>
-                  <Shadow />
-               </bumpInput>
-               <light>
-                  <Light.Distant>
-                     <color>
-                        <Color red="0.04814814776182175" green="1.0" blue="0.42888888716697693" />
-                     </color>
-                  </Light.Distant>
-               </light>
-            </Lighting>
-         </effect>
-      </Button>
    </children>
 </AnchorPane>

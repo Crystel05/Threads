@@ -1,3 +1,8 @@
+/*
+Crystel Montero - 2019158736
+Tarea Threads sistemas operativos
+ */
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;

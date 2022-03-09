@@ -96,15 +96,27 @@ public class ControladorPantalla implements Initializable, DragWindow {
 
     @FXML
     void comenzar(ActionEvent event) {
-        tortugaA = new Animal(Tipos.Tortuga, tortuga, meta, 25, this);
+        try{
+            if (tortu.isAlive()){
+                tortu.stop();
+            }
+            else if (lie.isAlive()){
+                lie.stop();
+            }
+        }catch (NullPointerException ignored){}
+
+        tortuga.setLayoutX(7);
+        liebre.setLayoutX(23);
+        liebreVelocidad.setText("20");
+        tortugaVelocidad.setText("30");
+
+        tortugaA = new Animal(Tipos.Tortuga, tortuga, meta, 30, this);
         liebreA = new Animal(Tipos.Liebre, liebre, meta, 20, this);
         tortu = new Thread(tortugaA);
         lie = new Thread(liebreA);
         lie.start();
         tortu.start();
     }
-
-   
 
     @FXML
     void cerrar(MouseEvent event){

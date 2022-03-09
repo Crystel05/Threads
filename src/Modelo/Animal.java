@@ -115,23 +115,24 @@ public class Animal implements Runnable{
                     pos = 2;
                 }
                 if (bordeDerecho) {
-                    if (tipo.equals(Tipos.Liebre))
-                        controladorPantalla.getLiebreTiempo().setText(String.valueOf(tiempo/50));
-                    else if (tipo.equals(Tipos.Tortuga))
-                        controladorPantalla.getTortugaTiempo().setText(String.valueOf(tiempo/50));
+//                    if (tipo.equals(Tipos.Liebre))
+//                        controladorPantalla.getLiebreTiempo().setText(String.valueOf(tiempo/50));
+//                    else if (tipo.equals(Tipos.Tortuga))
+//                        controladorPantalla.getTortugaTiempo().setText(String.valueOf(tiempo/50));
                     try {
                         cambiarMeta();
-                    }catch (FileNotFoundException e){
+                    } catch (FileNotFoundException e) {
                         e.printStackTrace();
                     }
                     borde = true;
                     pos = 0;
-                }else{
-                    if (tipo.equals(Tipos.Liebre))
-                        controladorPantalla.getLiebreTiempo().setText(String.valueOf(tiempo/50));
-                    else if (tipo.equals(Tipos.Tortuga))
-                        controladorPantalla.getTortugaTiempo().setText(String.valueOf(tiempo/50));
                 }
+//                }else{
+//                    if (tipo.equals(Tipos.Liebre))
+//                        controladorPantalla.getLiebreTiempo().setText(String.valueOf(tiempo/50));
+//                    else if (tipo.equals(Tipos.Tortuga))
+//                        controladorPantalla.getTortugaTiempo().setText(String.valueOf(tiempo/50));
+//                }
             }
         }));
         moverse.setCycleCount(Animation.INDEFINITE);
